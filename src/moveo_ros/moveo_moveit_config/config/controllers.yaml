@@ -1,0 +1,15 @@
+controller_list:
+ - name: moveo_arm_controller
+   action_ns: follow_joint_trajectory
+   type: FollowJointTrajectory
+   allowed_execution_duration_scaling: 10.0
+   default: true
+   joints:
+     - Joint_1
+     - Joint_2
+     - Joint_3
+     - Joint_4
+     - Joint_5
+initial:
+  - group: arm
+    pose: Upright
